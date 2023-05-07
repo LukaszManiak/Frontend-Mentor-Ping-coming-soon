@@ -1,0 +1,227 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --rray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Libre Franklin', Arial, Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  width: 50%;
+}
+.dashboard-img {
+  width: 90%;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--blue);
+  padding: 1rem;
+  border: solid 1px var(--pale-blue);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: fill 0.2s, background-color 0.2s, border 0.2s;
+}
+svg:hover {
+  fill: var(--white);
+  background-color: var(--blue);
+  border: solid 1px var(--blue);
+}
+.attribution {
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: absolute;
+  text-align: center;
+  padding: 0rem 2rem;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--blue);
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+.logo-img {
+  width: 10rem;
+}
+.launching-p {
+  font-size: 4rem;
+  color: var(--rray);
+}
+.launching-p strong {
+  color: var(--very-dark-blue);
+}
+.subscribe-p {
+  font-size: 2.3rem;
+  color: var(--very-dark-blue);
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.input-container input {
+  width: 60%;
+  padding: 1.5rem 0rem;
+  border-radius: 3rem;
+  border: 1px solid black;
+  font-size: 1.6rem;
+}
+.input-container button {
+  width: 25%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--white);
+  transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+}
+.alert {
+  display: block;
+  color: var(--light-red);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.6rem;
+  text-align: start;
+}
+.icons-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-container svg {
+  margin: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.input-container button:hover {
+  color: var(--blue);
+  background-color: var(--white);
+  box-shadow: 0px 0px 0px 4px var(--blue);
+}
+.buttom-container {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.copy-p {
+  font-size: 1.2rem;
+  color: var(--rray);
+}
+
+.modal {
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+  height: auto;
+  padding: 1rem;
+  font-size: 2.5rem;
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+  border: 3px solid var(--blue);
+  border-radius: 3rem;
+}
+.modal button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  margin-left: 0.3rem;
+  border: none;
+  color: var(--white);
+  transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+}
+.modal button:hover {
+  color: var(--blue);
+  background-color: var(--white);
+  box-shadow: 0px 0px 0px 4px var(--blue);
+}
+.hidden {
+  display: none;
+}
+
+.drop {
+  animation: drop-box 0.4s ease-in forwards;
+}
+
+@keyframes drop-box {
+  from {
+    transform: translate(-50%, -1000%);
+  }
+  to {
+    transform: translate(-50%, -500%);
+  }
+}
+
+@media (max-width: 750px) {
+  html {
+    font-size: 45%;
+  }
+  main {
+    width: 90%;
+  }
+  .buttom-container {
+    bottom: 30px;
+  }
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+  }
+  .input-container button,
+  .input-container input {
+    width: 100%;
+  }
+}
