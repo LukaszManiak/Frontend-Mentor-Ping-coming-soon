@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Mejniak/Frontend-Mentor-Ping-coming-soon)
-- Live Site URL: [Netlify](https://advicegeneratorapp-lukas.netlify.app/)
+- Live Site URL: [Netlify](https://pingcomingsoon-lukas.netlify.app/)
 
 ### Built with
 
