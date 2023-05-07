@@ -28,10 +28,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 1](/screenshots/coming-soon.1.jpeg.jpg?raw=true 'Screenshot 1')
-![Screenshot 2](/screenshots/coming-soon.2.jpg.jpeg?raw=true 'Screenshot 2')
-![Screenshot 3](/screenshots/coming-soon.3.jpg.jpeg?raw=true 'Screenshot 3')
-![Screenshot 4](/screenshots/coming-soon.4.jpg.jpeg?raw=true 'Screenshot 4')
+![Screenshot 1](/screenshots/coming-soon.1.jpeg?raw=true 'Screenshot 1')
+![Screenshot 2](/screenshots/coming-soon.2.jpg?raw=true 'Screenshot 2')
+![Screenshot 3](/screenshots/coming-soon.3.jpg?raw=true 'Screenshot 3')
+![Screenshot 4](/screenshots/coming-soon.4.jpg?raw=true 'Screenshot 4')
 
 ### Links
 
