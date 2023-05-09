@@ -94,11 +94,15 @@ svg:hover {
   width: 80%;
 }
 .input-container input {
+  text-indent: 15px;
   width: 60%;
   padding: 1.5rem 0rem;
   border-radius: 3rem;
   border: 1px solid black;
   font-size: 1.6rem;
+}
+.input-container input::placeholder {
+  text-indent: 15px;
 }
 .input-container button {
   width: 25%;
