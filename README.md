@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot 1](/screenshots/coming-soon.1.jpeg?raw=true 'Screenshot 1')
+![Screenshot 1](/screenshots/coming-soon.1.jpg?raw=true 'Screenshot 1')
 ![Screenshot 2](/screenshots/coming-soon.2.jpg?raw=true 'Screenshot 2')
 ![Screenshot 3](/screenshots/coming-soon.3.jpg?raw=true 'Screenshot 3')
 
