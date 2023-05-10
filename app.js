@@ -25,14 +25,30 @@ const checkInput = function () {
   }
 };
 
+const setInputStyles = function (boolean) {
+  if (boolean) {
+    input.style.border = 'solid 2px var(--light-red)';
+    input.style.color = 'var(--light-red)';
+  } else {
+    input.style.border = 'solid 1px black';
+    input.style.color = 'black';
+  }
+};
+
 const showMsg = function (msg) {
+  setInputStyles(true);
   msgElement.classList.add('alert');
   msgElement.innerText = msg;
 };
 
 const hideMsg = function () {
+  setInputStyles(false);
   msgElement.classList.add('hidden');
 };
+
+input.addEventListener('focus', function () {
+  input.style.color = 'black';
+});
 
 const showModal = function () {
   modalBox.classList.remove('hidden');
