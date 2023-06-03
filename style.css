@@ -158,7 +158,7 @@ svg:hover {
 .modal {
   z-index: 100;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -166,7 +166,7 @@ svg:hover {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  width: 320px;
+  width: 380px;
   height: auto;
   padding: 1rem;
   font-size: 2.5rem;
@@ -214,6 +214,10 @@ svg:hover {
   }
   main {
     width: 90%;
+  }
+  .modal {
+    top: 44%;
+    width: 330px;
   }
   .buttom-container {
     bottom: 30px;
